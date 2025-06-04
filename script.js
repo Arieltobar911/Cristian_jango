@@ -1,40 +1,13 @@
-let boton = document.getElementById('verNav');
-let boton2 = document.getElementById('ocultarNav');
-let nav = document.getElementById('elementoNav');
+// SECCION Switch NAV izquierda (oculto)
 
 function funcionNav() {
-    if (nav.style.display === 'none' || nav.style.display === '' ) {
-        nav.style.display = 'block';
-        boton.style.display = 'none';
-    } 
+    let nav = document.getElementById('elementoNav'); /* NEW */
+    nav.classList.toggle('hidden'); /* NEW */
+
+    let boton = document.getElementById('verNav'); /* NEW */
+    boton.classList.toggle('oscuro'); /* NEW */
+    
+    let fondo = document.getElementById('fondo'); /* NEW */
+    fondo.classList.toggle('anti-fondo'); /* NEW */
 }
 
-function Legacy_funcionNav() {
-    if (nav.style.display === 'block') {
-        nav.style.display = 'none';
-        boton.style.display = 'block';
-    } 
-}
-
-
-
-
-/* 
-function funcionNav() {
-    if (nav.style.display === 'none' || nav.style.display === '') {
-        nav.style.display = 'block';
-        boton.textContent = 'Ocultar menú';
-    } else {
-        nav.style.display = 'none';
-        boton.textContent = 'Mostrar menú';
-    }
-}
-
-else {
-        nav.style.display = 'none';
-    }
-
-else {
-        nav.style.display = 'block';
-    }
-*/

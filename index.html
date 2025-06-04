@@ -1,5 +1,6 @@
+<!-- Estructura Inicial-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Nav superior -->
     <header>
-        <nav id="elementoNav">
+        <nav class="main-nav">
             <ul>
-                <h1>📖 name-not-found-404</h1>
-                <li><a href="https://www.biblia.es/reina-valera-1960.php" target="_blank" rel="noopener noreferrer">RVR 1960</a></li>
-                <li><a href="#">tim</a></li>
-                <li><a href="#">tima</a></li>
-                <li><a href="#">timares</a></li>
-                <button id="ocultarNav" onclick="Legacy_funcionNav()" class="ocultar"></button>
+                <li><a href="#">inserte texto 1</a></li>
+                <li><a href="#">inserte texto 2</a></li>
+                <li><a href="#">inserte texto 3</a></li>
+                <li><a href="#">inserte texto 4</a></li>
             </ul>
         </nav>
-        <button id="verNav" onclick="funcionNav()" class="mostrar"></button>
     </header>
-    <main>
-        
-    </main>
+    <!-- Nav izquierdo (oculto - switch) -->
+    <div id="fondo" class="grey"></div> <!-- div para efecto blur -->
+    <nav id="elementoNav" class="nav hidden">
+        <ul>
+            <h1>⚙️ Mas informacion</h1>
+            <li><a href="https://www.biblia.es/reina-valera-1960.php" target="_blank" rel="noopener noreferrer">RVR 1960</a></li>
+            <li><a href="#">tim</a></li>
+            <li><a href="#">tima</a></li>
+            <li><a href="#">timares</a></li>
+        </ul>
+    </nav>
+    <button id="verNav" onclick="funcionNav()" class="mostrar">☰</button>
+    <div class="padre">
+    <!-- Nav izquierdo (mostrado) -->
+        <div class="anuncio">
+            
+        </div>
+    <!-- Contenido Principal -->
+        <main>
+
+        </main>
+    </div>   
 </body>
 <script src="script.js"></script>
 </html>
