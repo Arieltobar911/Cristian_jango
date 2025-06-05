@@ -15,7 +15,7 @@
     padding: 20px;
     padding-top: 40px;
     transition: 0.4s; /* NEW */
-    position: absolute; 
+    position: fixed; 
     z-index: 10;
     display: flex;
     align-items: flex-start;
@@ -62,9 +62,8 @@ a, h1 {
     cursor: pointer;
     color: white;
     font-size: 20px;
-    border: none;
-    z-index: 20;
-    position: absolute;
+    z-index: 10;
+    position: fixed;
 }
 
 .mostrar{
@@ -84,7 +83,7 @@ a, h1 {
 /* ESTRUCTURA NAV superior */
 
 .main-nav{
-    position: absolute;
+    position: fixed;
     z-index: 5;
     width: 100%;
     height: 125px;
@@ -92,13 +91,14 @@ a, h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    
 }
 
 /* FLEX PARA LOS PRINCIPALES*/
 
-.padre{
+main{
     display: flex;
+    padding-top: 125px;
 }
 
 /* SECCION ANUNCIO */
@@ -106,14 +106,15 @@ a, h1 {
 .anuncio{
     min-width: 200px;
     max-width: 300px;
-    height: 100vh;
+    min-height: calc(100vh - 125px);
     background-color: red;
     flex: 1;
 }
 
 /* ESTRUCTURA CENTRAL */
 
-main{
+.padre{
     flex: 4;
+    height: 100px;
 }
 
