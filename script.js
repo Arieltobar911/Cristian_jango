@@ -11,3 +11,12 @@ function funcionNav() {
     fondo.classList.toggle('anti-fondo'); /* NEW */
 }
 
+// SECCION swiper 
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',  
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+});
+

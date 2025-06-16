@@ -13,7 +13,7 @@
         <nav class="main-nav">
             <img src="img/images-Photoroom.png">
             <ul>
-                <li><a href="https://www.biblia.es/reina-valera-1960.php" target="_blank" rel="noopener noreferrer">Sitio relevante</a></li>
+                <li><a href="https://www.biblia.es/reina-valera-1960.php" target="_blank" rel="noopener noreferrer">Clickeame</a></li>
                 <li><a href="https://ibvictoria.cl/wp-content/uploads/2013/07/biblia-reina-valera-1960.pdf" target="_blank" rel="noopener noreferrer">Biblia RVR 1960</a></li>
                 <li><a href="https://ucis.us/wp-content/uploads/2021/12/Biblia-NVI_compressed.pdf" target="_blank" rel="noopener noreferrer">Biblia NVI</a></li>
                 <li><a href="https://dn790006.ca.archive.org/0/items/biblia-pdf-ntv-nueva-traduccion-viviente/biblia-pdf-ntv-nueva-traduccion-viviente.pdf" target="_blank" rel="noopener noreferrer">Biblia NTV</a></li>
@@ -25,10 +25,10 @@
     <nav id="elementoNav" class="nav hidden">
         <ul>
             <h1>⚙️ Mas informacion</h1>
-            <li><a href="">inserte texto 5</a></li>
-            <li><a href="#">inserte texto 6</a></li>
-            <li><a href="#">inserte texto 7</a></li>
-            <li><a href="#">inserte texto 8</a></li>
+            <li><a href="">Contactame</a></li>
+            <li><a href="#">Github de la pagina</a></li>
+            <li><a href="#">Recomendaciones</a></li>
+            <li><a href="#">Ajustes</a></li>
         </ul>
     </nav>
     <button id="verNav" onclick="funcionNav()" class="mostrar">☰</button>
@@ -44,14 +44,42 @@
         </div>
     <!-- Contenido Principal -->
         <div class="padre">
-            <div class="img-place-holder">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <!-- Versiculos Flexbox -->
+            <h1>Galeria tematica</h1>
+            <div class="imgcontainer">
+                <div class="img-place-holder placeholders">
+                    <img src="img/juan-3-3.jfif" alt="juan">
+                </div>
+                <div class="img-place-holder placeholders">
+                    <img src="img/josue-1-5.jfif" alt="josue">
+                </div>
+                <div class="img-place-holder placeholders">
+                    <img src="img/salmos-23-1.jpg" alt="">
+                </div>
+                <div class="img-place-holder-2 placeholders">
+                    <img src="img/isaias_41_10_1200.webp" alt="">
+                </div>
+            </div>
+            <!-- Swiper slider -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/hands.jpg" alt="imagen_1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/moises.jpg" alt="imagen_2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Jesus.webp" alt="imagen_3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/cpaostoles.jpg" alt="imagen_4">
+                    </div>
+                </div>
             </div>
         </div>
     </main>   
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </html>

@@ -6,6 +6,9 @@ Contactos de Ariel <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons
 
 ---
 
+P: ¿Tecnologias usadas? 
+- R: HTML5, CSS2, JavaScript y Swiper.js
+
 P: ¿Temática? 
 - R: El evangelio y Jesucristo
 
@@ -31,6 +34,8 @@ Nuevos elementos usados en CSS <img src="https://raw.githubusercontent.com/devic
   de un elemento
 - backdrop-filter: ; ¿Para que sirve? R: Establece efectos graficos de fondo, ejemplo backdrop-filter: blur(10px); establece 
   desenfoque de entorno (motion blur) de 10px
+- overflow: hidden; ¿Para que sirve? R: Oculta el desbordamiento (ocultando las imagenes en este caso)
+- aspect-ratio: 16/9; ¿Para que sirve? R: Establece el aspecto de 16/9 las imagenes
 
 ---
 
@@ -40,5 +45,12 @@ Nuevos elementos usados en JavaScript <img src="https://raw.githubusercontent.co
   clases (classList) de CSS, por ejemplo cuando oprimes un boton
 
 
-
+Redaccion de Swiper.js:
+- new Swiper('.swiper',{}) ¿Para que sirve? R: Crea una estancia Swiper, con ajustes
+- direction: ¿Para que sirve? R: Establece la direccion del scroll/slider
+  - 'horizontal' ¿Para que sirve? R: En Horizontal
+  - 'vertical' ¿Para que sirve? R: En Vertical
+- loop: true ¿Para que sirve? R: Activa el ciclo siempre verdadero, haciendo funcional el scroll/slider
+- autoplay: ¿Para que sirve? R: Se mueve automaticamente
+  - delay: 3000 ¿Para que sirve? R: Con un delay de 3 segundos
 
